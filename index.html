@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way To Smooth Drive</title>
+    <link rel="stylesheet" href="./first.css">
+</head>
+<body>
+    <div class="nav1">
+        <div class="logo"></div>
+        <input class="bar" type="text" placeholder="Search">
+        <p> Privacy Policy/Provider </p>
+        <img class="pic" src="./logo.png" alt="logo image">
+        <h3 class="title">Way To Smooth Drive</h3>
+    </div>
+    <div class="nav2">
+        <a id="ser" href="./second.html" style="margin-left: 8%;">Services</a>
+        <a id="pri" href="./pricing.html">Pricings</a>
+        <a id="sol" href="">Solutions</a>
+        <a id="con" href="./contact.html">Contact</a>
+        <a id="ab" href="">About Us</a>
+        <button onclick="changeLanguage()"> Tamil </button>
+        <button onclick="change()"> Hindi </button>
+    </div>
+    <div class="nav3">
+        <video class="edit" autoplay muted loop src="./video.mp4"></video>
+        <div class="nav4">
+            <h1 id="tach">Your Gateway To Seamless Solutions</h1>
+            <h2 id="ta">Discover potential issues before they happen with our advanced failure probability analysis. Our service accurately predicts the likelihood of component failures, allowing you to stay ahead of the curve. If a problem is detected, we'll have a solution ready for you within 2-3 days, ensuring minimal downtime and maximum efficiency.</h2>
+        </div>
+    </div>
+    <h1 class="next">!! Our Products Available For Services !!</h1>
+    <div class="img1">
+        <img style="height: 400px; width: 455px; float: left;" src="./engine.jpg" alt="engine image">
+        <img style="height: 400px; width: 455px; margin-left: 3.3%;" src="./detector.jpg" alt="pressure detector image">
+    </div>
+    <h3 style="margin-left: 31%; float: left;">ENGINE</h3>
+    <h3 style="margin-left: 59%;">PRESSURE DETECTOR</h3>
+    <div class="img1">
+        <img style="height: 400px; width: 455px; float: left;" src="./brake.jpg" alt="brake control image">
+        <img style="height: 400px; width: 455px; margin-left: 3.3%;" src="./hydraulic.jpg" alt="hydraulic pump image">
+    </div>
+    <h3 style="margin-left: 28%; float: left;">BRAKE CONTROL</h3>
+    <h3 style="margin-left: 60%;">HYDRAULIC PUMP</h3>
+    <div class="img1">
+        <img style="height: 400px; width: 455px; float: left;" src="./exhaust gas temp.jpg" alt="exhaust gas temperature image">
+        <img style="height: 400px; width: 455px; margin-left: 3.3%;" src="./system voltage.jpg" alt="system voltage image">
+    </div>
+    <h3 style="margin-left: 27%; float: left;">EXHAUST GAS TEMP.</h3>
+    <h3 style="margin-left: 60%;">SYSTEM VOLTAGE</h3>
+    <hr style="margin-top: 3%; margin-bottom: 1.5%;">
+    <p class="last" style="display: inline;">Contact us on :</p>
+    <a href="" style="margin-left: 4%; color: white; text-decoration-line: none;">Instagram</a>
+    <a href="" style="margin-left: 4%; color: white; text-decoration-line: none;">Twitter</a>
+    <a href="" style="margin-left: 4%; color: white; text-decoration-line: none;">Youtube</a>
+    <a href="" style="margin-left: 4%; color: white; text-decoration-line: none;">Facebook</a>
+    <hr style="margin-top: 1.5%;">
+    <p class="last">Disclaimer :</p>
+    <p id="dis" class="last">Our failure probability analysis is based on advanced algorithms and historical data, but it should not be considered a guarantee of future performance. While we aim to provide accurate predictions and timely services, unforeseen factors can affect outcomes. We do not assume liability for any losses or damages resulting from reliance on our analysis or services. Always use your judgement and consult with experts as needed.</p>
+</body>
+<script>
+    function changeLanguage()
+    {
+            document.getElementById("tach").innerHTML="தடையற்ற தீர்வுகளுக்கான உங்கள் நுழைவாயில்";
+            document.getElementById("pri").innerHTML="விலை நிர்ணயம்";
+            document.getElementById("sol").innerHTML="தீர்வுகள்";
+            document.getElementById("con").innerHTML="தொடர்பு";
+            document.getElementById("ab").innerHTML="எங்களை பற்றி";
+            document.getElementById("ser").innerHTML="சேவைகள்";
+            document.getElementById("dis").innerHTML="எங்கள் தோல்வி நிகழ்தகவு பகுப்பாய்வு மேம்பட்ட வழிமுறைகள் மற்றும் வரலாற்றுத் தரவை அடிப்படையாகக் கொண்டது, ஆனால் இது எதிர்கால செயல்திறனுக்கான உத்தரவாதமாக கருதப்படக்கூடாது. துல்லியமான கணிப்புகள் மற்றும் சரியான நேரத்தில் சேவைகளை வழங்குவதை நாங்கள் இலக்காகக் கொண்டாலும், எதிர்பாராத காரணிகள் விளைவுகளை பாதிக்கலாம். எங்கள் பகுப்பாய்வு அல்லது சேவைகளை நம்பியதன் விளைவாக ஏற்படும் இழப்புகள் அல்லது சேதங்களுக்கு நாங்கள் பொறுப்பேற்க மாட்டோம். எப்போதும் உங்கள் தீர்ப்பைப் பயன்படுத்தவும் மற்றும் தேவைக்கேற்ப நிபுணர்களுடன் கலந்தாலோசிக்கவும்.";
+            document.getElementById("ta").innerHTML="எங்களின் மேம்பட்ட தோல்வி நிகழ்தகவு பகுப்பாய்வு மூலம் சாத்தியமான சிக்கல்கள் ஏற்படும் முன் அவற்றைக் கண்டறியவும். எங்களுடைய சேவையானது கூறுகளின் தோல்வியின் சாத்தியக்கூறுகளை துல்லியமாக கணித்து, நீங்கள் வளைவை விட முன்னேற அனுமதிக்கிறது. ஒரு சிக்கல் கண்டறியப்பட்டால், 2-3 நாட்களுக்குள் உங்களுக்காக ஒரு தீர்வை நாங்கள் தயார் செய்வோம், குறைந்த வேலையில்லா நேரத்தையும் அதிகபட்ச செயல்திறனையும் உறுதிசெய்கிறோம்.";
+    }
+    function change()
+    {
+        document.getElementById("tach").innerHTML="निर्बाध समाधान के लिए आपका प्रवेश द्वार";
+            document.getElementById("pri").innerHTML="मूल्य निर्धारण";
+            document.getElementById("sol").innerHTML="समाधान";
+            document.getElementById("con").innerHTML="संपर्क";
+            document.getElementById("ab").innerHTML="हमारे बारे में";
+            document.getElementById("ser").innerHTML="सेवा";
+            document.getElementById("dis").innerHTML="हमारी विफलता संभाव्यता विश्लेषण उन्नत एल्गोरिदम और ऐतिहासिक डेटा पर आधारित है, लेकिन इसे भविष्य के प्रदर्शन की गारंटी नहीं माना जाना चाहिए। हालाँकि हमारा लक्ष्य सटीक पूर्वानुमान और समय पर सेवाएँ प्रदान करना है, अप्रत्याशित कारक परिणामों को प्रभावित कर सकते हैं। हम अपने विश्लेषण या सेवाओं पर निर्भरता के परिणामस्वरूप होने वाले किसी भी नुकसान या क्षति के लिए उत्तरदायी नहीं हैं। हमेशा अपने विवेक का प्रयोग करें और आवश्यकतानुसार विशेषज्ञों से परामर्श लें।";
+            document.getElementById("ta").innerHTML="हमारे उन्नत विफलता संभाव्यता विश्लेषण के साथ संभावित समस्याओं के घटित होने से पहले ही उनका पता लगाएं। हमारी सेवा घटक विफलताओं की संभावना का सटीक अनुमान लगाती है, जिससे आप सबसे आगे रह सकते हैं। यदि किसी समस्या का पता चलता है, तो हम न्यूनतम डाउनटाइम और अधिकतम दक्षता सुनिश्चित करते हुए 2-3 दिनों के भीतर आपके लिए समाधान तैयार कर देंगे।";
+    }
+</script>
+</html>

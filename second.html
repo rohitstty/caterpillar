@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="./second.css">
+</head>
+<body>
+    <div class="nav1">
+        <div class="logo"></div>
+        <input class="bar" type="text" placeholder="Search">
+        <p> Repair and Services </p>
+        <img class="pic" src="./logo.png" alt="logo image">
+        <h3 class="title">SERVICES</h3>
+    </div>
+    <div class="nav2">
+        <a href="" style="margin-left: 8%;">Online Products</a>
+        <a href="">Pricings</a>
+        <a href="">Solutions</a>
+        <a href="">Contact</a>
+        <a href="">About Us</a>
+    </div>
+    <div class="user">
+        <h2 class="head">Enter Your Details</h2>
+        <table>
+            <tr>
+                <td>Machine : </td>
+                <td><input style="height: 40px; width: 97%; font-size: 20px;" type="text"></td>
+            </tr>
+            <tr>
+                <td>Component : </td>
+                <td><input id="comp" style="height: 40px; width: 97%; font-size: 20px;" type="text"></td>
+            </tr>
+            <tr>
+                <td>Parameter : </td>
+                <td><input id="para" style="height: 40px; width: 97%; font-size: 20px;" type="text"></td>
+            </tr>
+            <tr>
+                <td>Value : </td>
+                <td><input id="val" style="height: 40px; width: 97%; font-size: 20px;" type="number"></td>
+            </tr>
+            <tr>
+                <td>Date of purchased : </td>
+                <td><input style="height: 40px; width: 97%; font-size: 20px;" type="date"></td>
+            </tr>
+        </table>
+        <button onclick="display()" style="margin-left: 26%;">Submit</button>
+        <button>Contact us</button>
+    </div>
+    <div class="vid">
+        <video class="service" autoplay muted loop src="./service.mp4"></video>
+    </div>
+</body>
+<script>
+    function display()
+    {
+        var component = document.getElementById("comp").value;
+        var parameter = document.getElementById("para").value;
+        var value = document.getElementById("val").value;
+        if(component=="Engine")
+        {
+            if(parameter=="Oil Pressure")
+            {
+                if(value<=25 || value>=65)
+                {
+                    alert("Your probability of failure of your engine is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else if(parameter=="Speed")
+            {
+                if(value>=1800)
+                {
+                    alert("Your probability of failure of your engine is medium. kindly visit our centre within 7-8 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else
+            {
+                if(value>=105)
+                {
+                    alert("Your probability of failure of your engine is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+        }
+        else if(component=="Fuel")
+        {
+            if(parameter=="Water in Fuel")
+            {
+                if(value>=1800)
+                {
+                    alert("Your probability of failure of your fuel tank is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else if(parameter=="Level")
+            {
+                if(value>=1)
+                {
+                    alert("Your probability of failure of your fuel tank is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else if(parameter=="Pressure")
+            {
+                if(value>=35 && value<=65)
+                {
+                    alert("Your probability of failure of your fuel tank is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else
+            {
+                if(value>=400)
+                {
+                    alert("Your probability of failure of your fuel tank is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+        }
+        else if(component=="Drive")
+        {
+            if(parameter=="Brake Control")
+            {
+                if(value<=1)
+                {
+                    alert("Your probability of failure of your drive is medium. kindly visit our centre within 7-8 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else if(parameter=="Pedal Sensor")
+            {
+                if(value<=4.7)
+                {
+                    alert("Your probability of failure of your drive is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else
+            {
+                if(value<=200 || value>=450)
+                {
+                    alert("Your probability of failure of your drive is medium. kindly visit our centre within 7-8 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+        }
+        else
+        {
+            if(parameter=="System Voltage")
+            {
+                if(value<=12 || value>=15)
+                {
+                    alert("Your probability of failure of your misc is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else if(parameter=="Exhaust Gas Temperature")
+            {
+                if(value>=365)
+                {
+                    alert("Your probability of failure of your misc is too high. kindly visit our centre within 2-3 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else if(parameter=="Hydraulic Pump Rate")
+            {
+                if(value>=125)
+                {
+                    alert("Your probability of failure of your misc is medium. kindly visit our centre within 7-8 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+            else
+            {
+                if(value<=20)
+                {
+                    alert("Your probability of failure of your misc is medium. kindly visit our centre within 7-8 days to get a best solution.");
+                }
+                else
+                {
+                    alert("You are having a good drive.")
+                }
+            }
+        }
+    }
+</script>
+</html>
